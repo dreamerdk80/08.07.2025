@@ -7,7 +7,7 @@ nav.forEach(link => {
         event.preventDefault()
         const id = link.getAttribute("href")
         const element = document.querySelector(id)
-        element.scrollIntoView({ behavior: "smooth" })
+        element.scrollIntoView({ behavior: "smooth", block: "nearest" })
     })
 })
 
